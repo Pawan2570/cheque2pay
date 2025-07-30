@@ -8,8 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl w-fit mb-4">
-              Cheque2Pay
+            <div className="mb-4">
+              <img 
+                src="/logo.png" 
+                alt="Cheque2Pay Logo" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6">
               Digitizing India's payment ecosystem with secure, instant cheque processing technology.

@@ -11,30 +11,19 @@ const Navigation = () => {
   const { user, logout } = useAuth();
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-2 min-h-[5rem]">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <div className="flex items-center space-x-2">
               <div className="relative">
-                {/* Golden Coin with Bank Building */}
-                <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
-                  <div className="w-6 h-6 bg-yellow-700 rounded-sm"></div>
-                </div>
-                {/* Cheque2Pay Text */}
-                <div className="ml-3">
-                  <div className="flex items-center">
-                    <span className="text-gray-900 font-bold text-xl">Cheque</span>
-                    <span className="text-cyan-500 font-bold text-2xl mx-1">2</span>
-                    <span className="text-gray-900 font-bold text-xl">Pay</span>
-                  </div>
-                  {/* Small Cheque Illustrations */}
-                  <div className="flex items-center mt-1">
-                    <div className="w-4 h-3 bg-blue-200 border border-purple-600 rounded-sm transform rotate-3"></div>
-                    <div className="w-4 h-3 bg-blue-200 border border-purple-600 rounded-sm -ml-1 transform -rotate-3"></div>
-                  </div>
-                </div>
+                {/* Logo */}
+                <img 
+                  src="/logo.png" 
+                  alt="Cheque2Pay Logo" 
+                  className="h-20 w-auto"
+                />
               </div>
             </div>
           </div>
